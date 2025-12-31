@@ -1,0 +1,165 @@
+.admin-dashboard {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.dashboard-container h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.users-table-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table thead {
+  background-color: #34495e;
+  color: white;
+}
+
+.users-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.users-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.users-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.role-badge,
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.role-admin {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.role-user {
+  background-color: #3498db;
+  color: white;
+}
+
+.status-active {
+  background-color: #27ae60;
+  color: white;
+}
+
+.status-inactive {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-destructive {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #7f8c8d;
+}
+
+.btn-destructive {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-destructive:hover:not(:disabled) {
+  background-color: #c0392b;
+}
+
+.btn-primary:disabled,
+.btn-secondary:disabled,
+.btn-destructive:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pagination span {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .users-table {
+    font-size: 0.875rem;
+  }
+
+  .users-table th,
+  .users-table td {
+    padding: 0.5rem;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
